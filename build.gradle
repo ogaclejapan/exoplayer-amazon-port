@@ -21,12 +21,17 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.1.0'
-        classpath 'com.novoda:bintray-release:0.3.4'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
     }
 }
 
 allprojects {
+
+    version = 'r1.5.9'
+    group = 'com.github.ogaclejapan.exoplayer-amazon-port'
+
     repositories {
         mavenCentral()
     }
 }
+
